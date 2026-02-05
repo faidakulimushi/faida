@@ -1,0 +1,387 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-right button{
+    padding: 10px;
+}
+
+
+
+
+/* Navigationstart */
+
+
+/* Base reset for nav */
+.navigation {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Main navbar container */
+.navigation .navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Links */
+.navigation .navbar li a {
+  display: inline-block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Hover effect */
+.navigation .navbar li a:hover {
+  color: #0f4380;
+  border-bottom: 2px solid #6cc00c;
+}
+
+/* Right-aligned button container */
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: auto; 
+  padding-right: 20px;
+}
+
+/* Buttons */
+.nav-right button {
+  background: #d82607;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* Dark mode toggle */
+.nav-right button:first-child {
+  background: transparent;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Hover for buttons */
+.nav-right button:hover {
+  
+  color: #fff;
+}
+
+/* Link inside button styling */
+.nav-right button a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+
+
+/* Navigationend */
+
+
+
+
+.logo {
+  width: 10pc;
+  /* height: auto; */
+
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+/* CONTENT */
+.content {
+  text-align: center;
+  padding: 60px 20px;
+  color: black;
+}
+
+.headline {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.green-text {
+  color: green;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.meta {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+ .file {
+  border-color: #2bd61c;
+  display: inline-block;        /* Stops full-width stretch */
+  font-size: 14px;
+  margin: 0 auto 40px auto;     /* Centered with bottom margin */
+  padding: 12px 16px;
+  max-width: 480px;             /* Limits width */
+  width: 100%;                  /* Still responsive */
+  background-color: #f9f9f9;
+  border: 3px solid rgb(21, 230, 2);
+  /* border-radius: 8px; */
+  color: rgb(13, 92, 6);
+  box-shadow: 4px 4px 1px rgb(21, 230, 2);
+  transition: all 0.2s ease;
+  font-family: monospace;
+}
+
+.file:hover {
+  background-color: #fff;
+  border-color: #a3a5a3;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* STATS */
+ /* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background: #ffffff;
+}
+
+.stat h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* :start */
+.legacy {
+  background: #ffffff;
+  color: #0f172a;
+  padding: 80px 20px;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.legacy-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.legacy h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #020617;
+}
+
+.legacy h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.legacy .intro {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #334155;
+  margin-bottom: 50px;
+}
+
+/* Pillars */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.pillar {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+.pillar h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #16a34a;
+}
+
+.pillar p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.timeline span {
+  font-size: 22px;
+  font-weight: 700;
+  color: #020617;
+}
+
+.timeline small {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.timeline .arrow {
+  font-size: 32px;
+  color: #16a34a;
+}
+
+/* Quote */
+blockquote {
+  background: #f8fafc7a;
+  border-left: 4px solid #16a34a;
+  padding: 30px;
+  border-radius: 12px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #334155;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+/* :end */
+
+
+/* :start */
+ 
+/* Section styling */
+.system-blueprint {
+  background-color: #ffffff; /* white background for the section */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card styling */
+.blueprint-card {
+  background-color: #ffffff; /* white background for the card */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Icon styling */
+.blueprint-icon {
+  width: 60px;
+  height: 60px;
+}
+
+/* Main image styling */
+.blueprint-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Titles */
+h2 {
+  font-size: 28px;
+  color: hsl(225, 67%, 1%);
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Content inside card */
+.blueprint-content {
+  text-align: left;
+  width: 100%;
+}
+
+.blueprint-content h4 {
+  font-size: 18px;
+  color: hsl(222, 71%, 3%);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.blueprint-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
